@@ -3,6 +3,12 @@ resource "azurerm_resource_group" "devrg" {
   location = "CentralIndia"
 }
 
+resource "azurerm_resource_group" "testrg" {
+  name     = "test-RG"
+  location = "west us"
+}
+
+
 resource "azurerm_storage_account" "example" {
   name                     = "storageaccountname"
   resource_group_name      = azurerm_resource_group.example.name
