@@ -1,6 +1,6 @@
 resource "azurerm_resource_group" "devrg" {
   name     = "Dev-RG"
-  location = "West Europe"
+  location = "CentralIndia"
 }
 
 resource "azurerm_storage_account" "example" {
@@ -14,3 +14,5 @@ resource "azurerm_storage_account" "example" {
     environment = "staging"
   }
 }
+
+
