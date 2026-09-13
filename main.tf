@@ -1,6 +1,6 @@
 resource "azurerm_resource_group" "devrg" {
   name     = "Dev-RG"
-  location = "West Europe"
+  location = "Japan East"
 }
 
 resource "azurerm_storage_account" "example" {
