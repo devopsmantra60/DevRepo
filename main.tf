@@ -8,6 +8,10 @@ resource "azurerm_resource_group" "testrg" {
   location = "west us"
 }
 
+resource "azurerm_resource_group" "qarg" {
+  name     = "qa-RG"
+  location = "japan east"
+}
 
 resource "azurerm_storage_account" "example" {
   name                     = "storageaccountname"
